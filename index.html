@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title, favicon, apple touch icon -->
+    <title>File Input jQuery Plugin</title>
+
+    <!-- The developers cystom stylesheets -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fixes.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="fileinput.js"></script>
+    <script>
+    $(document).ready(function() {
+        fileInput();
+    });
+    </script>
+</head>
+<body>
+
+	<div class="wrap">
+		<h1>Example of replaced input[type="file"]</h1>
+
+		<br>
+
+		<input type="file" name="file1" >	
+		<input type="file" name="file2" >	
+		<input type="file" name="file3" >	
+	</div>
+
+</body>
+</html>

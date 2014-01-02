@@ -1,0 +1,10 @@
+/* Make padding go inside the boxes */
+div, input, textarea, select {
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* Blurry text fix with Webkit browsers */
+* {	-webkit-font-smoothing: antialiased; }
+/* Removes the default, orange outline with Chrome. */
+*:focus { outline: none; }
