@@ -2,7 +2,7 @@ file_input_js
 ===
 This small plugin (665 byte) is created to make cross-browser file input styling, easy. It creates a main div with two child divs. The plugin differentiate between the inputs by the "name" attribute, so it won't work before you grant your inputs a name.
 
-***Disclaimer:*** *This is not a styled option, but rather a "convertion" so you can style your own inputs as it fits you, with cross-browser support. You can of course use the demo-page as a starting point. It is MIT licnsed after all :)*
+***Disclaimer:*** *This isn't a styled option, but rather a "convertion" so you can style your own inputs as it fits you, with cross-browser support. You can of course use the demo-page as a starting point :)*
 
 Demo
 ---
