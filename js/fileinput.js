@@ -2,10 +2,10 @@
 function fileInput(fi_container_class, fi_button_class, fi_filename_class, fi_button_text) {
 
 	// Arguments
-	fi_container_class	=	fi_container_class	||	'fileUpload'; // Classname of the wrapper that contains the button & filename.
-	fi_button_class		=	fi_button_class		||	'fileBtn'; // Classname for the button
-	fi_filename_class	=	fi_filename_class	||	'fileName'; // Name of the text element's class
-	fi_button_text		=	fi_button_text		||	'Choose fil...'; // Text inside the button
+	fi_container_class	=	fi_container_class	||	'fi_container'; // Classname of the wrapper that contains the button & filename.
+	fi_button_class		=	fi_button_class		||	'fi_btn'; // Classname for the button
+	fi_filename_class	=	fi_filename_class	||	'fi_filename'; // Name of the text element's class
+	fi_button_text		=	fi_button_text		||	'Browse...'; // Text inside the button
 
 	// Variables
 	var fi_file = $('input[type=file]'); // Type of input to look for
@@ -45,7 +45,7 @@ function fileInput(fi_container_class, fi_button_class, fi_filename_class, fi_bu
 		// Remove path from file-name
 		var fi_array = fi_file_name.split('\\'); // Split on backslash (and escape it)
 		var fi_last_row = fi_array.length - 1; // Deduct 1 due to 0-based index
-			fi_file_name = fi_array[fi_last_row]; // 
+			fi_file_name = fi_array[fi_last_row]; // Get filename from array and convert to string
 
 		// Loop through each "fake input container"
 		$('.'+fi_container_class).each(function() {
