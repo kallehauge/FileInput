@@ -6,14 +6,13 @@
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
-    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Title, favicon, apple touch icon -->
+    <!-- Title -->
     <title>File Input jQuery Plugin</title>
 
-    <!-- The developers cystom stylesheets -->
+    <!-- The developers cystom stylesheets (only for looks @ demo) -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fixes.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,11 +20,12 @@
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <!-- Script -->
+    <!-- The script -->
     <script src="js/fileinput.js"></script>
     <script>
     $(document).ready(function() {
-        fileInput();
+        // fileInput(container, button, filename, button text);
+        fileInput('fi_container', 'fi_btn', 'fi_filename', 'Browse...');
     });
     </script>
 </head>

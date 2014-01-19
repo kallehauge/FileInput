@@ -32,7 +32,7 @@ body, html {
 }
 
 /* Container for 2 child elements (button & filename) */
-.fileUpload {
+.fi_container {
     background: #fff;
     border: 0;
     display: block;
@@ -46,7 +46,7 @@ body, html {
 }
 
 /* The button */
-.fileUpload .fileBtn {
+.fi_container .fi_btn {
     background: #2C88D6;
     cursor: pointer;
     float: left;
@@ -61,12 +61,12 @@ body, html {
 	-webkit-border-radius: 6px 0 0 6px;
 	border-radius: 6px 0 0 6px;
 }
-.fileUpload .fileBtn:hover {
+.fi_container .fi_btn:hover {
 	background: #2C4356;
 }
 
 /* Where the input-name will be filled in */
-.fileUpload .fileName {
+.fi_container .fi_filename {
     float: right;
     overflow: hidden;
 	white-space: nowrap;
@@ -76,8 +76,8 @@ body, html {
 	padding: 3% 0;
 }
 
-/* Animation (hover) */
-.fileUpload .fileBtn:hover {
+/* Animations */
+.fi_container .fi_btn:hover {
 	-webkit-transition-property: background;
 	-webkit-transition-duration: 0.4s;
 	-webkit-transition-timing-function: ease-in;
@@ -96,7 +96,7 @@ body, html {
 }
 
 /* Clear input-parent, due to child-floats */
-.fileUpload:after {
+.fi_container:after {
     clear: both;
     content: " ";
     display: block;
